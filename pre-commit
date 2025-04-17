@@ -1,0 +1,71 @@
+#!/usr/bin/env node
+
+// link: https://forums.rpgmakerweb.com/index.php?threads/automatically-pretty-json-files-for-clean-git-commit-diffs-using-git-hooks.108122/
+
+const data_directory = "data";
+let command = "";
+
+const fs = require("fs");
+const { exec } = require("child_process");
+
+console.log("Running cleanup…");
+
+fs.readdir(data_directory, (err, files) => {
+    if (err) {
+        console.error(err);
+        process.exit(1);
+    }
+    if (!files || files.length === 0) {
+        console.warn(`Warning: no files found in ${data_directory}`);
+        process.exit(0);
+    }
+
+    files.forEach(file => {
+        const filepath = `${data_directory}/${file}`;
+
+        // Read the raw file first
+        const raw = fs.readFileSync(filepath, "utf8");
+
+        let parsed;
+        try {
+            parsed = JSON.parse(raw);
+        } catch (e) {
+            console.warn(`⚠️  Skipping invalid JSON: ${file} (${e.message})`);
+            return;                       // Skip to the next file
+        }
+
+        // ───── File‑specific tweaks ────────────────────────────────
+        if (file === "MapInfos.json") {
+            parsed.forEach(obj => {
+                if (obj && obj.scrollX) {
+                    obj.scrollX = 0;
+                    obj.scrollY = 0;
+                }
+            });
+        }
+
+        if (file === "System.json") {
+            parsed.versionId = "latest";
+        }
+        // ───────────────────────────────────────────────────────────
+
+        fs.writeFileSync(filepath, JSON.stringify(parsed, null, 2));
+        command += ` ${filepath}`;
+    });
+
+    // Only call git add if we actually modified at least one file
+    if (command.trim()) {
+        exec(`git add${command} -f`, (err, stdout, stderr) => {
+            if (err) {
+                console.error(err);
+                process.exit(1);
+            }
+            if (stdout) console.log(stdout);
+            if (stderr) console.error(stderr);
+            process.exit(0);
+        });
+    } else {
+        console.log("No valid JSON files were modified; nothing to add.");
+        process.exit(0);
+    }
+});
