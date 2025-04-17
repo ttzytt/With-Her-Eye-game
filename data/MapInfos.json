@@ -1,33 +1,6 @@
 [
-  null,
-  {
-    "id": 1,
-    "expanded": false,
-    "name": "Taklamakan Grassland",
-    "order": 3,
-    "parentId": 0,
-    "scrollX": 0,
-    "scrollY": 0,
-    "quick": false
-  },
-  {
-    "id": 2,
-    "expanded": false,
-    "name": "Computer Room",
-    "order": 2,
-    "parentId": 0,
-    "scrollX": 0,
-    "scrollY": 0,
-    "quick": false
-  },
-  {
-    "id": 3,
-    "expanded": true,
-    "name": "Space Center",
-    "order": 1,
-    "parentId": 0,
-    "scrollX": 0,
-    "scrollY": 0,
-    "quick": false
-  }
+null,
+{"id":1,"expanded":false,"name":"Taklamakan Grassland","order":3,"parentId":0,"scrollX":0,"scrollY":0,"quick":false},
+{"id":2,"expanded":false,"name":"Computer Room","order":2,"parentId":0,"scrollX":0,"scrollY":0,"quick":false},
+{"id":3,"expanded":true,"name":"Space Center","order":1,"parentId":0,"scrollX":0,"scrollY":0,"quick":false}
 ]
