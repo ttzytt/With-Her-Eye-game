@@ -345,9 +345,9 @@
       "volume": 90
     }
   ],
-  "startMapId": 3,
-  "startX": 12,
-  "startY": 11,
+  "startMapId": 1,
+  "startX": 15,
+  "startY": 39,
   "switches": [
     "",
     "1act",

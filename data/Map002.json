@@ -5100,10 +5100,21 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor1",
+                6,
+                0,
+                2,
+                "Director"
+              ]
+            },
+            {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Your client during the trip is Jennifer. "
+                "Our client during the trip is \\C[1]Jennifer\\C[0]. "
               ]
             },
             {
@@ -5111,6 +5122,24 @@
               "indent": 1,
               "parameters": [
                 "You’ll like the girl."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor1",
+                6,
+                0,
+                2,
+                "Director"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Try to put on these eyes."
               ]
             },
             {
