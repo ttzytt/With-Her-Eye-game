@@ -29,7 +29,7 @@
   {
     "id": 2,
     "animationId": 0,
-    "consumable": true,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -37,12 +37,12 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
+    "description": "Some flowers",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 184,
     "itypeId": 1,
-    "name": "",
+    "name": "Flower",
     "note": "",
     "occasion": 0,
     "price": 0,
