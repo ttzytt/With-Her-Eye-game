@@ -119,7 +119,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 2,
+  "editMapId": 3,
   "elements": [
     "",
     "Physical",
@@ -345,16 +345,16 @@
       "volume": 90
     }
   ],
-  "startMapId": 2,
-  "startX": 11,
-  "startY": 13,
+  "startMapId": 3,
+  "startX": 12,
+  "startY": 11,
   "switches": [
     "",
     "1act",
     "1actmove",
     "gettoriver",
     "gettoroof",
-    "",
+    "morning",
     "2act",
     "",
     "",
