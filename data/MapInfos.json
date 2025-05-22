@@ -42,7 +42,7 @@
   },
   {
     "id": 5,
-    "expanded": false,
+    "expanded": true,
     "name": "Ruins",
     "order": 5,
     "parentId": 0,
@@ -53,8 +53,18 @@
   {
     "id": 6,
     "expanded": true,
-    "name": "Computer Room2",
+    "name": "Bar",
     "order": 6,
+    "parentId": 0,
+    "scrollX": 0,
+    "scrollY": 0,
+    "quick": false
+  },
+  {
+    "id": 7,
+    "expanded": true,
+    "name": "Congress",
+    "order": 7,
     "parentId": 0,
     "scrollX": 0,
     "scrollY": 0,
