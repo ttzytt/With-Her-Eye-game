@@ -52,9 +52,19 @@
   },
   {
     "id": 6,
-    "expanded": false,
+    "expanded": true,
     "name": "Bar",
     "order": 6,
+    "parentId": 0,
+    "scrollX": 0,
+    "scrollY": 0,
+    "quick": false
+  },
+  {
+    "id": 7,
+    "expanded": true,
+    "name": "Congress",
+    "order": 7,
     "parentId": 0,
     "scrollX": 0,
     "scrollY": 0,
