@@ -42,9 +42,19 @@
   },
   {
     "id": 5,
-    "expanded": false,
+    "expanded": true,
     "name": "Ruins",
     "order": 5,
+    "parentId": 0,
+    "scrollX": 0,
+    "scrollY": 0,
+    "quick": false
+  },
+  {
+    "id": 6,
+    "expanded": false,
+    "name": "Bar",
+    "order": 6,
     "parentId": 0,
     "scrollX": 0,
     "scrollY": 0,
