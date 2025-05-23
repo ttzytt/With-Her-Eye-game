@@ -3936,13 +3936,26 @@
           },
           "list": [
             {
+              "code": 241,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "with_her_eyes_i",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 111,
               "indent": 0,
               "parameters": [
                 0,
                 1,
                 1
-              ]
+              ],
+              "collapsed": true
             },
             {
               "code": 101,
